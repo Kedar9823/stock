@@ -1,0 +1,5 @@
+package in.practice.service;
+
+public class StockService {
+
+}

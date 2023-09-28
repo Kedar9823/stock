@@ -1,0 +1,14 @@
+package in.practice.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class StockUIController {
+
+	@GetMapping("/")
+	public String loadPage() {
+		System.out.println("Loading page...");
+		return "index";
+	}
+}

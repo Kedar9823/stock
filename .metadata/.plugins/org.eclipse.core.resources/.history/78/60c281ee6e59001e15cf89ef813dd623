@@ -1,0 +1,11 @@
+package in.practice.service;
+
+public class StockPriceService implements IStockPriceService {
+
+	@Override
+	public Double findByCompanyName(String companyName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

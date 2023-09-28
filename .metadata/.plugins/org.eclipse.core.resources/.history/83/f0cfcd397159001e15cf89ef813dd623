@@ -1,0 +1,21 @@
+package in.practice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.practice.repository.IStockRepository;
+import in.practice.repository.StockRepository;
+
+@Service
+public class StockPriceServiceImpl implements IStockPriceService {
+
+	@Autowired
+	private IStockRepository repo;
+
+	@Override
+	public Double findByCompanyName(String companyName) {
+		repo.find
+		return null;
+	}
+
+}

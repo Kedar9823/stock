@@ -1,0 +1,25 @@
+package in.practice.main.collection;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TestApp10 {
+	public static void main(String[] args) {
+		String str = "Hi Hello How are you Ok Bye Take Care!$#%";
+		
+		char[] ch = str.replaceAll("\\s", " ").replaceAll("[^A-Za-z0-9]", "").toLowerCase().toCharArray();
+	
+		Set<Character> set =  new TreeSet<>();
+		
+		for(char itr : ch) {
+			set.add(itr);
+		}
+		
+
+
+		for(char c : set) {
+			long count = str.chars().filter(ch1 -> ch1 == c).count();
+			System.out.println("Occurances: "+c+" count: "+count);
+		}
+	}
+}

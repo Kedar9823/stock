@@ -1,0 +1,8 @@
+package in.practice.main;
+
+public class SubClass {
+
+	public void print() {
+		MainApp.MESSAGE
+	}
+}

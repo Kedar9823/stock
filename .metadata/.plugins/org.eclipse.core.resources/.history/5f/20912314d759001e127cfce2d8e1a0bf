@@ -1,0 +1,23 @@
+package in.practice.restcontroller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.service.annotation.GetExchange;
+
+@RestController
+@RequestMapping("/api/calc")
+public class StockCalculationController {
+	
+	@GetMapping("/calculate/{companyName}/{quantity}")
+	public ResponseEntity<?> calculate(@PathVariable String comapnyName, @PathVariable Integer quantity){
+		ResponseEntity<?> response = null;
+		
+		System.out.println(comapnyName);
+		System.out.println(quantity);
+		
+		return response;
+	}
+}

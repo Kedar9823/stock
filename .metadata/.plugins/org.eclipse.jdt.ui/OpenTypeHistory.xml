@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=BootProject03-DependencyInjection/C:\/Program Files\/Java\/jdk-19\/lib\/jrt-fs.jar`java.desktop=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/19\/docs\/api\/=/=/maven.pomderived=/true=/&lt;javax.swing(Icon.class[Icon" modifiers="1537" timestamp="1678989759776"/>
+    <typeInfo handle="=BootProject03-DependencyInjection/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.comp{ICourse.java[ICourse" modifiers="513" timestamp="1686393375217"/>
+    <typeInfo handle="=BootProject04-TestApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.dao{IEmployeeDao.java[IEmployeeDao" modifiers="513" timestamp="1686401492110"/>
+    <typeInfo handle="=Stock-Service/C:\/Users\/Kedar10\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.1.4\/spring-data-jpa-3.1.4.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.1.4=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1695401001813"/>
+    <typeInfo handle="=Stock-Service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.practice.service{IStockPriceService.java[IStockPriceService" modifiers="513" timestamp="1695404168877"/>
+</typeInfoHistroy>

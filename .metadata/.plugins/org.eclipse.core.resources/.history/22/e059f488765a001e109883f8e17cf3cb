@@ -1,0 +1,25 @@
+package in.practice.main.collection;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+import in.practice.main.commons.Employee;
+
+public class TestApp6 {
+	public static void main(String[] args) {
+		Integer[] arr = {
+			40,60,70,90,20,30,10,20,50
+		};
+		
+		Arrays.sort(arr, new Comparator<Integer>() {
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				return o1.compareTo(o2);
+			}
+			
+		});
+		
+		System.out.println(Arrays.toString(arr));
+	}
+}

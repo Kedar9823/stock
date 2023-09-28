@@ -1,0 +1,20 @@
+package in.practice.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+@Service
+public class StockService {
+
+	private static final String URI_ENDPOINT = "http://localhost:1111/api/calc/calculate/{companyName}/{quantity}";
+	public String getTotalCost(String companyName, Integer quantity) {
+		
+		String response = null;
+		WebClient webClient = WebClient.create();
+		
+		response = webClient.get().uri(URI_ENDPOINT, companyName,quantity).retrieve().bodyToMono(String.class).block();
+		
+		
+		return response;
+	}
+}

@@ -1,0 +1,14 @@
+package in.practice.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class StockService {
+
+	public String getTotalCost(String companyName, Integer quantity) {
+		
+		String response = null;
+		
+		return response;
+	}
+}

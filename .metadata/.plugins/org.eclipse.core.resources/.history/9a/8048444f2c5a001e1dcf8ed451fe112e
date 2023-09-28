@@ -1,0 +1,28 @@
+package in.practice.main;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.Locale;
+
+public class MainApp {
+	
+	private static void String message = "Access me!";
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Current Time: "+getTime());
+		//display();
+	}
+	
+	public static String getTime() {
+		
+		LocalDateTime time = LocalDateTime.now();  
+
+		return time.toString();
+	}
+	
+	public void display() {
+		System.out.println("Current Time: "+getTime());
+	}
+}

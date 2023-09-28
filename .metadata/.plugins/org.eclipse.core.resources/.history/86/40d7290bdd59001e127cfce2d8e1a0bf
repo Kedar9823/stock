@@ -1,0 +1,12 @@
+package in.practice.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class StockUIController {
+
+	public String loadPage() {
+		System.out.println("Loading page...");
+		return "index";
+	}
+}

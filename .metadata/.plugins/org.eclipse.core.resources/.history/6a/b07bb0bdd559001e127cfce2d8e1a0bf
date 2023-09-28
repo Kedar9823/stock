@@ -1,0 +1,11 @@
+package in.practice.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@FeignClient(name="")
+public interface StockClient {
+	
+	public ResponseEntity<Double> getPriceByCompanyName(@PathVariable String companyName);	
+}

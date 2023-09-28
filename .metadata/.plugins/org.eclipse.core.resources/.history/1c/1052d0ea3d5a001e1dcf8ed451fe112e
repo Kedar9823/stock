@@ -1,0 +1,8 @@
+package in.practice.main.collection;
+
+public class Snippet {
+	public static void main(String[] args) {
+		MapToListUsingStream 
+	}
+}
+

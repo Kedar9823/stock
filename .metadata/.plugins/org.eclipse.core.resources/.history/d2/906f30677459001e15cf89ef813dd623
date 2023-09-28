@@ -1,0 +1,5 @@
+package in.practice.exception.handler;
+
+public class StockPriceApiError {
+
+}

@@ -1,0 +1,11 @@
+package in.practice.main.collection;
+
+public class TestApp8 {
+	public static void main(String[] args) {
+		String arr = "Hi Hello How are you Ok Bye Take Care!$#%";
+		
+		arr = arr.replaceAll("\\s"," ").replaceAll("[^A-Za-z0-9]", "");
+	
+		System.out.println(arr);
+	}
+}

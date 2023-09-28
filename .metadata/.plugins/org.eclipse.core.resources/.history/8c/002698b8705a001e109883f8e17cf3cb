@@ -1,0 +1,9 @@
+package in.practice.main.collection;
+
+public class TestApp {
+	public static void main(String[] args) {
+		
+		
+		(i1,i2)-> System.out.println(i1+i2);
+	}
+}

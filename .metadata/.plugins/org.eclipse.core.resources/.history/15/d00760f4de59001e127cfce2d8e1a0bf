@@ -1,0 +1,28 @@
+package in.practice.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@Controller
+public class StockUIController {
+
+	@GetMapping("/")
+	public String loadPage() {
+		System.out.println("Loading page...");
+		return "index";
+	}
+	
+	@GetMapping("/getTotalCost")
+	public String getTotalCost(HttpServletRequest request) {
+		System.out.println("StockUIController.getTotalCost()");
+		
+		
+		String companyName = request.getParameter("companyName");
+		String quantity = request.getParameter("quantity");
+		
+		
+		return "index";
+	}
+}

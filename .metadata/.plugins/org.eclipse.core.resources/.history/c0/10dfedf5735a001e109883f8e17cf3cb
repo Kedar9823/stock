@@ -1,0 +1,17 @@
+package in.practice.main.collection;
+
+import java.util.List;
+
+import in.practice.main.commons.Employee;
+
+public class TestApp3 {
+	public static void main(String[] args) {
+		List<Employee> list = List.of(
+				new Employee(101, "Robert", "IT"),
+				new Employee(102, "Mary", "HR"),
+				new Employee(104, "Johnson", "Admin"),
+				);
+		
+		
+	}
+}

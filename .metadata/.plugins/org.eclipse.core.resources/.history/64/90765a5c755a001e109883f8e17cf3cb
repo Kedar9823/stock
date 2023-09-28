@@ -1,0 +1,28 @@
+package in.practice.main.collection;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import in.practice.main.commons.Employee;
+
+public class TestApp3 {
+	public static void main(String[] args) {
+		List<Employee> list = List.of(
+				new Employee(101, "Robert", "IT"),
+				new Employee(102, "Mary", "HR"),
+				new Employee(104, "Johnson", "Admin"),
+				new Employee(105, "Smith", "IT"));
+		
+		List<Integer> id = list.stream().map(i-> i.getId()).collect(Collectors.toList());
+		
+		List<String> name = list.stream().map(i-> i.getName()).collect(Collectors.toList());
+		
+		List<String> department = list.stream().map(i-> i.getDepartment()).collect(Collectors.toList());
+		
+		
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(department);
+		
+	}
+}

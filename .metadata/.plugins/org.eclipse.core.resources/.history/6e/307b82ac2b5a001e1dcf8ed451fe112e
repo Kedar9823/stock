@@ -1,0 +1,19 @@
+package in.practice.main;
+
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.Locale;
+
+public class MainApp {
+	public static void main(String[] args) {
+		Long time = getTime();
+		System.out.println("Current Time: ");
+	}
+	
+	public static String getTime() {
+		
+		Long time = new Date().getTime();
+		
+		return time.toString();
+	}
+}
