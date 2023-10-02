@@ -10,7 +10,7 @@
 	<groupId>ineuron</groupId>
 	<artifactId>Stock-API-Gateway</artifactId>
 	<version>1.1</version>
-	<packaging>war</packaging>
+	<!--<packaging>war</packaging>-->
 	<name>Stock-API-Gateway</name>
 	<description>Stock Client</description>
 	<properties>
@@ -71,8 +71,41 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
+        	<plugin>
+           		<groupId>org.apache.maven.plugins</groupId>
+           	 	<artifactId>maven-assembly-plugin</artifactId>
+            		<configuration>
+                	<descriptorRefs>
+                   	 	<descriptorRef>jar-with-dependencies</descriptorRef>
+                	</descriptorRefs>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass>in.ineuron.StockApiGatewayApplication</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>make-assembly</id>
+                    <phase>jar</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>   		
 		</plugins>
+		<finalName>stock-api-gateway</finalName>
 	</build>
 
 </project>
